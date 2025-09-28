@@ -1,0 +1,195 @@
+/* Nur Startseite (coffee.html) */
+body.coffee-page .mdl-layout__content {
+  display: flex;
+  justify-content: center;   /* horizontal mittig */
+  align-items: center;       /* vertikal mittig */
+  min-height: calc(100vh - 64px);
+  padding: 0;
+}
+
+/* Unterseiten (z. B. Handfilter.html) */
+body.coffee-detail-page .mdl-layout__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* nur horizontal mittig */
+  padding: 20px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 90vw;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+}
+
+.grid-item {
+  background-color: #F5E6D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.custom-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Skaliert proportional, füllt so viel Platz wie möglich */
+  /* pointer-events: none; */
+  user-select: none;
+  }
+
+.custom-icon {
+  width: 100%;
+  height: 100%;
+  max-width: none;    /* erlaubt größere Skalierung */
+  max-height: none;   /* verhindert Begrenzung */
+  object-fit: cover;  /* füllt das Feld aus, schneidet ggf. Ränder ab */
+  /* pointer-events: none; */
+  user-select: none;
+}
+
+button {
+    border: none;
+    padding: 1.25rem;
+    margin-top: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #5C3A28;
+    border-radius: 5px;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    width: 90%;
+    font-size: 18px;
+    font-family: roboto;
+    font-weight: bold;  
+}
+
+.detail-icon {
+  width: 90%;        /* nimmt 90% der verfügbaren Breite */
+  max-width: 200px;  /* aber nie größer als 500px */
+  height: auto;      /* behält Seitenverhältnis */
+  display: block;  
+  }
+
+  hr {
+  border: 0;
+  border-top: 5px solid #5C3A28;
+  width: 100%;
+  margin: 5px 0;
+}
+
+#button-save {
+margin-top: 20px;
+background-color: #A8BBA3 !important;
+color: black !important;
+}
+
+#button-reset {
+margin-top: 15px;
+background-color: #D46A6A !important;
+color: black !important;
+}
+
+p {
+   font-weight: normal;
+    font-size: 17px;
+    align-items: center;
+    line-height: 2.5rem;
+    font-family: roboto;
+}
+
+span {
+  font-weight: bold;
+}
+
+.text {
+  width: 95%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.highlight-green {
+  background-color: #A8BBA3; /* dein Grünton */
+  border-radius: 12px;       /* optional: runde Ecken */
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Config {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.config-row {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 1.5rem; /* Abstand zwischen Default und Eingaben */
+}
+
+.config-row p {
+  margin: 0;
+  min-width: 120px; /* sorgt für einheitliche Breite der Default-Anzeige */
+  font-size: 17px;
+  font-family: roboto;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 1rem; /* kleiner Abstand zwischen Input & Label, größer zwischen Gruppen */
+  flex-wrap: wrap;  /* falls Bildschirm zu schmal ist, Inputs umbrechen */
+}
+
+.input-wrapper input {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: gainsboro;
+  text-align: center;
+  font-size: 16px;
+  height: 2.2rem;
+  font-weight: bold;
+}
+
+.input-wrapper label {
+  font-size: 17px;
+  font-family: roboto;
+}
+/* Buttons nur innerhalb der Config-Blöcke */
+.Config .button-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Config .config-button-save {
+  background-color: #A8BBA3;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.Config .config-button-reset {
+  background-color: #D46A6A;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.Config .config-button-save:active,
+.Config .config-button-reset:active {
+  transform: scale(0.96);
+}

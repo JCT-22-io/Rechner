@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teigrechner</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../Teigrechner/styles.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../Kaffeerechner/stylesCoffee.css"
+    />
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
+  </head>
+  <body class="coffee-detail-page frenchpress-seite">
+    <!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+    <div
+      class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"
+    >
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Frenchpress</span>
+          <div class="mdl-layout-spacer"></div>
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"
+          >
+            <label
+              class="mdl-button mdl-js-button mdl-button--icon"
+              for="fixed-header-drawer-exp"
+            >
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                name="sample"
+                id="fixed-header-drawer-exp"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="../Teigrechner/index.html">Vorteig</a>
+          <a class="mdl-navigation__link" href="../Teigrechner/Biga.html">Biga</a>
+          <a class="mdl-navigation__link" href="../Teigrechner/Poolish.html">Poolish</a>
+          <a class="mdl-navigation__link" href="../Teigrechner/Umrechner.html">Umrechner</a>
+          <a class="mdl-navigation__link" href="../Teigrechner/Config.html">Konfiguration</a>
+          <a class="mdl-navigation__link" href="../Kaffeerechner/coffee.html">Kaffee</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+
+        <button onclick="window.location.href='coffee.html'">Zurück</button>
+        
+
+        <img src="Frenchpress.png" alt="Coffee Icon" class="detail-icon" id="Frenchpress"/>
+
+        <div class="text">
+        <p>Clicks: <span id="frenchpress-clicks1">0</span></p>
+        <p>Gramm: <span id="frenchpress-gramm">0</span></p>
+        </div>
+        <hr>
+
+        <div class="text">
+        <h5>zu Handfilter</h5>
+        <p>Clicks <span id="frenchpress-clicks2">0</span></p>
+        </div>
+        <hr>
+
+        <div class="text">
+        <h5>zu Bialetti</h5>
+        <p>Clicks <span id="frenchpress-clicks3">0</span></p>
+        </div>
+        
+        <button id="button-save">Speichern</button>
+        <button id="button-reset">Zurücksetzen</button>
+
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="coffeeScript.js"></script>
+  </body>
+</html>
