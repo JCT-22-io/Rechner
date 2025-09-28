@@ -1,2 +1,0 @@
-kannst du die icons anpassen als png, mit transparentem hintergrund, 512x512px, farbton #5C3A28, Kannst du die Abbildungen in den Icons fast so groß wie 512px machen
-Ich werde diese in einem 4er Grid auf einem Pixel 7 darstellen und möchte keinen Rand zur Abgrenzung einsetzten aber das Grid hat nur einen Gap von 10px bitte berücksichtigen damit die Icons trotzdem im 4er Grid ausshen da die Icons Klickbar sein sollen ,alle in einer Zip Datei wenn ich Sie hochlade?
